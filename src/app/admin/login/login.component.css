@@ -1,0 +1,60 @@
+body{
+	position: relative;
+}
+.admin-login{
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-size: cover;
+	background-position: center;
+}
+.message-container{
+	position: absolute;
+	padding:0 15px; 
+	min-width: 450px;
+	top: 20%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	background-color: #fff;
+	min-height: 50px;
+	display: flex;
+	align-items: center;
+}
+.message-container p{
+	display: flex;
+	align-items: center; 
+}
+.success{
+	color: #4CAF50;
+}
+.danger{
+	color: #f00;
+}
+.login-container{
+	position: absolute;
+	width: 450px;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%); 
+}
+.login-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.login-form > * {
+  width: 100%;
+}
+.login-form input{
+	margin:0 0 -6px 0;
+}
+.diasbled{
+	cursor: not-allowed;
+}
+@media(max-width:768px){
+	.login-container,.message-container{
+		width: 300px;
+	}
+}

@@ -1,0 +1,14 @@
+.get-qoute-front{
+	
+}
+.get-quote-form{
+  width: 100%;
+}
+
+.get-quote-form-full-width {
+  width: 100%;
+}
+.get-quote-form-full-width input{
+	border-bottom: none!important;
+	box-shadow: none!important;
+}

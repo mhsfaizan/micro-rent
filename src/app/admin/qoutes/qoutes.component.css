@@ -1,0 +1,9 @@
+.qoute-form input{
+	margin: 0 0 -6px 0!important;
+}
+.mat-cell:first-child{
+	padding-left: 24px;
+}
+.mat-cell:last-child{
+	padding-right: 24px;
+}

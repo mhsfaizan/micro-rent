@@ -1,0 +1,36 @@
+/*subscribe*/
+.get-more{
+	min-height:250px;
+	display: flex;
+	justify-content: center;
+	align-items:  center;
+	
+	background-position: center;
+	background-size: cover; 
+}
+.get-more>div{
+	text-align: center;
+}
+
+.subscribe {
+	display: flex;
+}
+.subscribe input{
+	width: 50%;
+}
+.subscribe span{
+	align-self: flex-end;
+	font-size: 20px;
+	margin-right: 5px;
+}
+.subscribe div{
+	align-self: flex-end;
+	margin-bottom: 8px;
+}
+.subscribe div button{
+	background-color: #000;
+	color:#fff;
+	border:none;
+	padding:5px 10px; 
+
+}

@@ -1,0 +1,21 @@
+.rental-container{
+	padding-left: 15px;
+	padding-right: 15px;
+	box-sizing: border-box;
+}
+.rental{
+	
+}
+.main-rental-container{
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+@media(min-width:768px){
+	.main-rental-container div{
+		flex-basis: 33%;
+	}
+	.main-rental-container div:last-child{
+		text-align: right;
+	}
+}

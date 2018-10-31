@@ -1,0 +1,19 @@
+.contact{
+	
+}
+
+.get-quote-form-full-width{
+	width: 100%;
+}
+.get-quote-form-full-width input{
+	border-bottom: none!important;
+	box-shadow: none!important;
+}
+h6{
+	font-size: 2rem;
+}
+@media(max-width: 600px){
+	h6{
+		font-size: 1.7rem;
+	}
+}

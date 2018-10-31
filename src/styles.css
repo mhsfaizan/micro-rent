@@ -1,1 +1,58 @@
 /* You can add global styles to this file, and also import other style files */
+@import "./assets/materialize/css/materialize.min.css";
+/*@import "~@angular/material/prebuilt-themes/indigo-pink.css";*/
+html, body { height: 100%; }
+body { margin: 0; font-family: 'Roboto', sans-serif; }
+
+.bg-primary{
+	background-color: #fff;
+}
+.bg-secondry{
+ 	background-color: #006e3d;
+}
+.bg-third{
+	background-color: #ffca05!important;
+	color: #fff!important;
+}
+.text-white{
+	color: #fff;
+}
+/*fron-image*/
+
+.front-image{
+	display: flex;
+	background-size: cover;
+	background-position: center;
+	min-height: 230px;
+	align-items: center;
+	justify-content: center;
+}
+.text{
+	color: #fff;
+}
+.text p{
+	font-size: 1.5rem;
+	color: #555
+}
+a{
+	cursor: pointer;
+}
+.mycontainer{
+	padding-left: 15px;
+	padding-right: 15px;
+	box-sizing: border-box;
+}
+h3{
+	margin:0;
+	margin-bottom: 1.5rem;
+	font-size: 3rem;
+}
+.contact-form-main,.form-container{
+	width: 60%;
+	margin : 0 auto;
+}
+@media(max-width: 768px){
+	.contact-form-main,.form-container{
+		width: 90%;
+	}
+}

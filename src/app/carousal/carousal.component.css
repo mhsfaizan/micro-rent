@@ -1,0 +1,28 @@
+.carousal-text{
+	color:#000;
+	position: absolute;
+	top:45%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+@media(min-width: 768px){
+	.carousel{
+		height: 400px!important;
+	}
+}
+@media(max-width:809px){
+	.carousal-text h1{
+		font-size: 25px;
+	}
+	.carousal-text{
+		top: 40%;
+	}
+}
+@media(max-width:600px){
+	.carousal-text{
+		top: 25%;
+	}
+	.main-carousal{
+		height: 219px;
+	}
+}
