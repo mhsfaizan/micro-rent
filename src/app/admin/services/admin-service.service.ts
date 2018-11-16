@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
-import { AngularFireAuth } from 'angularfire2/auth';
 import { AngularFireDatabase } from 'angularfire2/database';
+import { AngularFireAuth } from 'angularfire2/auth';
 @Injectable({
   providedIn: 'root'
 })
@@ -11,9 +11,11 @@ export class AdminServiceService {
   	.signInWithEmailAndPassword(loginData.email, loginData.password)
   	
   }
+  
   signout(){
   	return this._angauth.auth;
   }
+  
   isLoggedIn(){
   	if(localStorage.getItem("username")!=null){
   		return true;
@@ -22,8 +24,23 @@ export class AdminServiceService {
   		return false;
   	}
   }
+  
   getQoute(){
     let ref = this._db.database.ref("qoutes/");
     return ref;
+  }
+  
+  getSubscribedUsers(){
+    let ref = this._db.database.ref("subscribers/");
+    return ref;
+  }
+
+  submitReviewService(formData) {
+    let ref = this._db.database.ref("reviews/");
+    return ref.push(formData);
+  }
+  deleteReview(id){
+    let ref = this._db.database.ref("reviews/"+id);
+    return ref.remove();
   }
 }

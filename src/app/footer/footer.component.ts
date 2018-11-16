@@ -9,11 +9,15 @@ export class FooterComponent implements OnInit {
 
   constructor() { }
   col3 = 3;
-  y = .8;
+  y = .7;
   ngOnInit() {
-  	if(screen.width<768){
+    if (screen.width > 768 && screen.width < 900) {
+      this.col3 = 3;
+      this.y = 1;
+    }
+    if(screen.width < 768){
   		this.col3 = 2;
-      this.y = 1.5;
+      this.y = 1.2;
   	}
   	if(screen.width<=300){
       this.col3 = 1;

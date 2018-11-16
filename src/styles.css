@@ -17,13 +17,12 @@ body { margin: 0; font-family: 'Roboto', sans-serif; }
 .text-white{
 	color: #fff;
 }
-/*fron-image*/
-
+/* Front Image */
 .front-image{
 	display: flex;
 	background-size: cover;
 	background-position: center;
-	min-height: 230px;
+	min-height: 300px;
 	align-items: center;
 	justify-content: center;
 }

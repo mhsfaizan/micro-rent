@@ -1,0 +1,42 @@
+<div class="fab-container">
+  <button mat-fab color="primary" class="fab-btn" (click)="openDialog()">
+    <mat-icon aria-label="Example icon-button with a heart icon">add</mat-icon>
+  </button>
+</div>
+
+<h5>Customer Reviews</h5>
+
+<mat-card class="example-card" *ngFor="let customerReview of customerReviews">
+  <mat-card-header>
+    <mat-card-title>
+      <b> {{ customerReview.clientName }} </b>
+      <div class="delete-btn">
+        <button mat-icon-button color="warn" (click)="open(customerReview.id)">
+          <mat-icon>delete</mat-icon>
+        </button>
+      </div>
+    </mat-card-title>
+
+  </mat-card-header>
+  <mat-card-content>
+    <p> {{ customerReview.clientReview }} </p>
+  </mat-card-content>
+</mat-card>
+<section>
+  <swal 
+    #delete 
+    title="Are you sure?" 
+    text="You won't be able to revert this!" 
+    type="warning"
+    showCancelButton="true"
+    confirmButtonColor="#3085d6"
+    cancelButtonColor="#d33"
+    confirmButtonText='Yes, delete it!'
+  ></swal>
+  <swal
+    #success
+    title="Deleted"
+    text="Succesfully Deleted"
+    type="success"
+  ></swal>
+</section>

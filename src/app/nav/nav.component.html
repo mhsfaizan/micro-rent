@@ -10,28 +10,28 @@
     >
     <mat-toolbar color="accent">Menu</mat-toolbar>
     <mat-nav-list>
-      <a mat-list-item routerLink="/home" routerLinkActive="myactive" [routerLinkActiveOptions]="{exact: true}">Home</a>
-      <a mat-list-item routerLink="/about" routerLinkActive="myactive">About Us</a>
+      <a mat-list-item (click)="drawer.toggle()" routerLink="/home" routerLinkActive="myactive" [routerLinkActiveOptions]="{exact: true}">Home</a>
+      <a mat-list-item (click)="drawer.toggle()" routerLink="/about-us" routerLinkActive="myactive">About Us</a>
       <!--  <a mat-list-item  [matMenuTriggerFor]="menu" class="my-dropdown" >
             Products <mat-icon>keyboard_arrow_down</mat-icon>
         </a>
         <mat-menu #menu="matMenu" yPosition="below" [overlapTrigger]="false">
-          <a mat-menu-item routerLink="/products/lap-rental" routerLinkActive="myactive" >Laptop Rental</a>
-          <a mat-menu-item routerLink="/products/desktop-rental" routerLinkActive="myactive" >Desktop Rental</a>
-          <a mat-menu-item routerLink="/products/ipad-rental" routerLinkActive="myactive" >Ipads Rental</a>
-          <a mat-menu-item routerLink="/products/workstation-rental" routerLinkActive="myactive" >workstation Rental</a>
-          <a mat-menu-item routerLink="/products/server-rental" routerLinkActive="myactive" >Server Rental</a>
-          <a mat-menu-item routerLink="/products/projector-rental" routerLinkActive="myactive" >Projectors Rental</a>
-          <a mat-menu-item routerLink="/products/printer-rental" routerLinkActive="myactive" >Printers Rental</a>
-          <a mat-menu-item routerLink="/products/apple-rental" routerLinkActive="myactive" >Apple Products Rental</a>
+          <a mat-menu-item (click)="drawer.toggle()" routerLink="/products/lap-rental" routerLinkActive="myactive" >Laptop Rental</a>
+          <a mat-menu-item (click)="drawer.toggle()" routerLink="/products/desktop-rental" routerLinkActive="myactive" >Desktop Rental</a>
+          <a mat-menu-item (click)="drawer.toggle()" routerLink="/products/ipad-rental" routerLinkActive="myactive" >Ipads Rental</a>
+          <a mat-menu-item (click)="drawer.toggle()" routerLink="/products/workstation-rental" routerLinkActive="myactive" >workstation Rental</a>
+          <a mat-menu-item (click)="drawer.toggle()" routerLink="/products/server-rental" routerLinkActive="myactive" >Server Rental</a>
+          <a mat-menu-item (click)="drawer.toggle()" routerLink="/products/projector-rental" routerLinkActive="myactive" >Projectors Rental</a>
+          <a mat-menu-item (click)="drawer.toggle()" routerLink="/products/printer-rental" routerLinkActive="myactive" >Printers Rental</a>
+          <a mat-menu-item (click)="drawer.toggle()" routerLink="/products/apple-rental" routerLinkActive="myactive" >Apple Products Rental</a>
         </mat-menu> -->
-      <a mat-list-item  routerLink="/products" routerLinkActive="myactive">
+      <a mat-list-item  (click)="drawer.toggle()" routerLink="/products" routerLinkActive="myactive">
             Products 
       </a>
-      <a mat-list-item routerLink="/rental-solution" routerLinkActive="myactive">Rental solution </a>
-      <a mat-list-item routerLinkActive="myactive" routerLink="/contact-us">Contact Us</a>
+      <a mat-list-item (click)="drawer.toggle()" routerLink="/rental-solution" routerLinkActive="myactive">Rental solution </a>
+      <a mat-list-item routerLinkActive="myactive" (click)="drawer.toggle()" routerLink="/contact-us">Contact Us</a>
       <br>
-      &nbsp;&nbsp;<a  mat-flat-button  color="primary" routerLink="/get-quote" routerLinkActive="myactive">Get a Quote</a>
+      &nbsp;&nbsp;<a  mat-flat-button  color="primary" (click)="drawer.toggle()" routerLink="/get-quote" routerLinkActive="myactive">Get a Quote</a>
     </mat-nav-list>
   </mat-sidenav>
   <mat-sidenav-content >
@@ -44,11 +44,11 @@
         *ngIf="isHandset$ | async">
         <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
       </button>
-      <span class="logo-img"><a href="#"><img src="assets/images/logo.png" height="64"></a></span>
+      <span class="logo-img"><a href="#"><img src="assets/images/logo.png" height="45"></a></span>
       <div class="desktop-links-container" [ngClass]="{hidden:(isHandset$ | async)}">
         <div class="desktop-links">
           <a  routerLink="/home" routerLinkActive="myactive"  [routerLinkActiveOptions]="{exact: true}">Home</a>
-          <a  routerLink="/about" routerLinkActive="myactive" >About Us</a>
+          <a  routerLink="/about-us" routerLinkActive="myactive" >About Us</a>
           <a mat-list-item  routerLink="/products" routerLinkActive="myactive"> 
                 Products 
           </a>

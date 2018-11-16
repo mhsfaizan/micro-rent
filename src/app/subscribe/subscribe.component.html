@@ -2,7 +2,7 @@
 	<div class="get-more" style="background-image:url('assets/images/get-more-bg.jpg');">
 		<div>
 			<h3>Get More Information From Us!</h3>
-			<p><b>Get The Best Services In The New Delhi.Call Us On To Get Latest Updates </b></p>
+			<p><b>Get the best services in Delhi,NCR. Call us to get the latest updates.</b></p>
 			<div class="subscribe">
 				<span><b>Your E-Mail</b></span>
 				<input  type="email"  required [formControl] = "email">
@@ -10,4 +10,18 @@
 			</div>
 		</div>
 	</div>
+</section>
+<section>
+	<swal
+		#success
+		title="Thankyou!"
+		text="You Have Succefully Subscribed.We Will contact you soon"
+		type="success"
+	></swal>
+	<swal 
+		#error 
+		title="Error!" 
+		text="Oops! Error Found" 
+		type="error">
+	</swal>
 </section>

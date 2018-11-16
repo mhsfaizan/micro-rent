@@ -1,0 +1,20 @@
+.example-container {
+  display: flex;
+  width: 90%;
+  flex-direction: column;
+}
+
+@media(min-width : 450px) {
+    .example-container {
+        width: 400px;
+    }
+}
+
+.example-container > * {
+  width: 100%;
+}
+
+.example-container input, 
+.example-container textarea {
+    margin: 0px 0px -6px 0px;
+}

@@ -1,7 +1,3 @@
-.contact{
-	
-}
-
 .get-quote-form-full-width{
 	width: 100%;
 }
@@ -9,11 +5,40 @@
 	border-bottom: none!important;
 	box-shadow: none!important;
 }
-h6{
+#contact-form mat-card{
+	padding: 0;
+	margin: 16px;
+}
+/*h6{
 	font-size: 2rem;
 }
 @media(max-width: 600px){
 	h6{
 		font-size: 1.7rem;
+	}
+}
+*/
+
+/*Aeshar*/
+.lets-talk {
+	width: 100%;
+	padding: 0px 24px;
+	flex-wrap: wrap;
+}
+.details-container {
+	display: flex;
+	justify-content: space-around;
+}
+.details-container {
+	width: 100%;
+}
+@media (max-width: 768px) {
+	.details-container {
+		flex-wrap: wrap;
+		width: 100%;
+
+	}	
+	.details-container div {
+
 	}
 }

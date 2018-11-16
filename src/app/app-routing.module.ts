@@ -23,7 +23,7 @@ import { NotFoundComponent } from "./not-found/not-found.component";
 const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
    { path: 'home', component: HomeComponent,data:{title:'Micro Rent|Home',description:"homeD"}},
-   {path:'about',component:AboutComponent,data:{title:'Micro Rent|About',description:"aboutD"}},
+   {path:'about-us',component:AboutComponent,data:{title:'Micro Rent|About',description:"aboutD"}},
    {path:'get-quote',component:GetquoteComponent,data:{title:'Micro rent|getQoute',description:"qouteD"}},
    {path:'contact-us',component:ContactusComponent,data:{title:'Micro rent|Contact',description:"contactD"}},
    {path:"rental-solution",component:RentalSolutionComponent,data:{title:'Micro Rent|Rental Solution',description:'rental solution'}},

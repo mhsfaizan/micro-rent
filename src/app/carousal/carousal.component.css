@@ -1,28 +1,42 @@
 .carousal-text{
-	color:#000;
 	position: absolute;
-	top:45%;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: rgba(0, 0, 0, 0.3);
+}
+.carousal-text h2{
+	color:#ffd129;
+	position: absolute;
+	top: 45%;
+	text-align: center;
 	left: 50%;
+	font-size: 2.5rem;
 	transform: translate(-50%,-50%);
 }
-@media(min-width: 768px){
-	.carousel{
-		height: 400px!important;
-	}
+.carousel{
+	height: 514px;
 }
+.carousel img{
+	object-fit:cover;
+	object-position: center;
+}
+
 @media(max-width:809px){
-	.carousal-text h1{
+	.carousal-text h2{
 		font-size: 25px;
 	}
-	.carousal-text{
+	.carousal-text h2{
 		top: 40%;
 	}
 }
 @media(max-width:600px){
-	.carousal-text{
-		top: 25%;
+	.carousal-text h2{
+		font-size: 20px;
+		top: 20%;
 	}
 	.main-carousal{
-		height: 219px;
+		height: 300px;
 	}
 }

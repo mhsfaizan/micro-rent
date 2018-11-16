@@ -1,3 +1,23 @@
-<p>
-  overview works!
-</p>
+<mat-grid-list cols="3" rowHeight="1:2" gutterSize="16px">
+  <mat-grid-tile>
+  	<mat-card>
+	  	<h3>{{ quotesLength }}</h3>
+  		<p>Quotes</p>
+	  	<a routerLink="../quotes">See Full List</a>
+  	</mat-card>
+  </mat-grid-tile>
+  <mat-grid-tile>
+  	<mat-card>
+	  	<h3>{{ contactsLength }}</h3>
+  		<p>Customer Contacted</p>
+	  	<a routerLink="../contact-customer">See Full List</a>
+  	</mat-card>
+  </mat-grid-tile>
+  <mat-grid-tile>
+  	<mat-card>
+      <h3>{{ subscribedUserLength }}</h3>
+  		<p>Subsribed User</p>
+	  	<a routerLink="../subscriber">See Full List</a>
+  	</mat-card>
+  </mat-grid-tile>
+</mat-grid-list>

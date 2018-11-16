@@ -17,22 +17,22 @@ export class QoutesComponent implements OnInit {
   	this.getQoutes((qoutes)=>{
       this.myData = qoutes;
       if (!this.changeDetectorRefs['destroyed']) {
-          this.changeDetectorRefs.detectChanges();
+        this.changeDetectorRefs.detectChanges();
       }
     });
   }
   getQoutes(cb){
   	this._admin.getQoute()
-        .on("value",(snapshot)=>{
-           this.qoutes = [];
-           let data = snapshot.val();
-           for(let i in data){
-             if(data[i].isqoute==true){
-               this.qoutes.push(data[i]);
-             }
-           }
-          console.log(this.qoutes)
-          cb(this.qoutes);
-        },(err)=>console.log(err));
+    .on("value",(snapshot)=>{
+       this.qoutes = [];
+       let data = snapshot.val();
+       for(let i in data){
+         if(data[i].isqoute==true){
+           this.qoutes.push(data[i]);
+         }
+       }
+      console.log(this.qoutes)
+      cb(this.qoutes);
+    },(err)=>console.log(err));
   }
 }

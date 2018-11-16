@@ -26,14 +26,14 @@ export class LoginComponent implements OnInit {
           localStorage.setItem("username",data.user.email);
           form.reset();
           this.isShowMessage = true;
-          this.errMessage = "Successfully LogedIn";
+          this.errMessage = "Logged in successfully!!";
           this.errClass = "success";
           setTimeout(()=>this._router.navigate(["./adminpanel/dashboard"]),2000);
         })
         .catch((err)=>{
             this.isShowMessage = true;
             this.errClass = "danger";
-            this.errMessage = "Username or Password Wrong";
+            this.errMessage = "Entered wrong username or password.";
         });
   }
 

@@ -3,9 +3,6 @@
 	padding-right: 15px;
 	box-sizing: border-box;
 }
-.rental{
-	
-}
 .main-rental-container{
 	display: flex;
 	justify-content: space-between;
@@ -18,4 +15,7 @@
 	.main-rental-container div:last-child{
 		text-align: right;
 	}
+}
+.main-rental-container ol{
+	list-style: lower-alpha;
 }

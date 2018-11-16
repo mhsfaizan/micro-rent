@@ -1,3 +1,10 @@
-<p>
-  subscriber works!
-</p>
+<table class="mat-table mat-elevation-z8" width="100%">
+  <tr class="mat-header-row">
+    <th class="mat-cell">#</th>
+    <th class="mat-cell">Email</th>
+  </tr>
+  <tr *ngFor="let subscribedUser of subscribedUsers; index as i" class="mat-row">
+    <td class="mat-cell">{{ i + 1 }}</td>
+    <td class="mat-cell">{{subscribedUser.email}}</td>
+  </tr>
+</table>

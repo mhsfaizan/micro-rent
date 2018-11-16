@@ -1,6 +1,6 @@
 import { Component ,OnInit } from '@angular/core';
 import {FormControl, Validators} from '@angular/forms';
-import { Router,RoutesRecognized,NavigationEnd } from '@angular/router';
+import { Router,RoutesRecognized,NavigationEnd, NavigationStart } from '@angular/router';
 import { Meta,Title } from '@angular/platform-browser'; 
 @Component({
   selector: 'app-root',
@@ -18,6 +18,9 @@ export class AppComponent implements OnInit{
           this._title.setTitle(dt.title);
           this._meta.updateTag({name:'description',content:dt.description});
         }
+        // if (event instanceof NavigationStart) {
+        //   this.menuState = 'out';
+        // }
         if(data instanceof NavigationEnd){
           document.getElementById("main").scrollIntoView();
         }

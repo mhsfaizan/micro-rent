@@ -16,28 +16,21 @@ mat-card-header{
 	cursor: pointer;
 }
 @media(min-width:980px){
-	/*.carousel .carousel-item{
-		width: 250px;
-		height: 250px;
-	}*/
 	#client-carousal .carousel.carousel-slider .carousel-item{
 		min-height: auto;
 	}
 	#client-carousal .carousel{
-		height: 250px!important;
+		height: 200px!important;
 	}
 }
 .why-client{
 	padding:40px 20px 20px 20px;
 	color: #fff;
 }
-/*client carousal*/
 
+/*client carousal*/
 .client-carousal-main{
-	display: flex;
     height: 100%;
-    justify-content: space-between;
-    /*align-items: center;*/
     width: 80%;
     margin: 0 auto;
 }
@@ -48,4 +41,3 @@ mat-card-header{
 	flex-basis:50%;
 	text-align: left;
 }
-

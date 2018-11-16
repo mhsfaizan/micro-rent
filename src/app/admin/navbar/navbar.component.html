@@ -8,10 +8,12 @@
     [opened]="!(isHandset$ | async)">
     <mat-toolbar color="primary">Menu</mat-toolbar>
     <mat-nav-list>
-      <a mat-list-item routerLink="./qoutes" >Qoutes</a>
-      <a mat-list-item routerLink="./contact-customer">Contact Customers</a>
-      <a mat-list-item routerLink="./subscriber">Subscription</a>
-      <a mat-list-item (click)="logout()">Logout</a>
+      <a mat-list-item routerLink="./overview" routerLinkActive="activeNavClass">Home</a>
+      <a mat-list-item routerLink="./quotes" routerLinkActive="activeNavClass">Quotes</a>
+      <a mat-list-item routerLink="./contact-customer" routerLinkActive="activeNavClass">Contacted Customers</a>
+      <a mat-list-item routerLink="./subscriber" routerLinkActive="activeNavClass">Subscribed Users</a>
+      <a mat-list-item routerLink="./customer-reviews" routerLinkActive="activeNavClass">Customer Reviews</a>
+      <a mat-list-item (click)="logout()" routerLinkActive="activeNavClass">Logout</a>
     </mat-nav-list>
   </mat-sidenav>
   <mat-sidenav-content>

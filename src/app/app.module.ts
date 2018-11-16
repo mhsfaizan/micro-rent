@@ -6,6 +6,7 @@ import {HttpClientModule} from '@angular/common/http'
 import { AngularFireModule } from 'angularfire2';
 import { AngularFireDatabaseModule } from 'angularfire2/database';
 import { environment } from '../environments/environment';
+import { SweetAlert2Module } from '@toverux/ngx-sweetalert2';
 
 
 import {MatDialogModule} from '@angular/material/dialog';
@@ -93,9 +94,10 @@ import { TermConditionComponent } from './term-condition/term-condition.componen
     HttpClientModule,
     MatMenuModule,
     MatExpansionModule,
-    AngularFireAuthModule,
+    SweetAlert2Module.forRoot(),
     AngularFireModule.initializeApp(environment.firebase),
-    AngularFireDatabaseModule, // for database
+    AngularFireDatabaseModule, // for database,
+    AngularFireAuthModule
   ],
   entryComponents: [
         MyDialogueComponent

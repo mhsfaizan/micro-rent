@@ -9,6 +9,7 @@ import { OverviewComponent } from './overview/overview.component';
 import { QoutesComponent } from './qoutes/qoutes.component';
 import { SubscriberComponent } from './subscriber/subscriber.component';
 import { ContactCustomerComponent } from './contact-customer/contact-customer.component';
+import { CustomerReviewComponent } from './customer-review/customer-review.component';
 const routes:Routes = [
 	{   path:'',
 		component:AdminAppComponent,
@@ -22,9 +23,10 @@ const routes:Routes = [
 				children:[
 					{path:'',component:OverviewComponent},
 					{path:'overview',component:OverviewComponent},
-					{path:'qoutes',component:QoutesComponent},
+					{path:'quotes',component:QoutesComponent},
 					{path:'subscriber',component:SubscriberComponent},
 					{path:'contact-customer',component:ContactCustomerComponent},
+					{path:'customer-reviews',component: CustomerReviewComponent},
 					{path:'**',component:OverviewComponent}
 				]
 			}

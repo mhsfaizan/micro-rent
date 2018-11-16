@@ -1,0 +1,14 @@
+.fab-container {
+    position: fixed;
+    right: 32px;
+    bottom: 32px;
+    z-index: 1;
+}
+.example-card {
+    margin-bottom: 16px;
+}
+.delete-btn{
+    position: absolute;
+    top: .8rem;
+    right: 1rem;
+}
